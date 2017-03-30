@@ -3,7 +3,7 @@ package com.googleguice.CheckOut;
 import com.google.inject.Guice;
 import com.google.inject.Injector;
 import com.googleguice.CheckOut.Service.CheckOutService;
-import com.googleguice.guice.module.DiscountModule;
+import com.googleguice.guice.inject.DiscountModule;
 
 public final class App {
     private App() {

@@ -3,22 +3,21 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.googleguice.CheckOut.provider;
+package com.googleguice.guice.inject;
 
-import com.googleguice.CheckOut.freeProvider.*;
+import com.google.inject.AbstractModule;
 import com.googleguice.CheckOut.Discount.Discountable;
 
 /**
  *
  * @author MITRA
  */
-public class NoDiscount implements Discountable{
+public class DiscountProviderModule extends AbstractModule{
 
     @Override
-    public double getDiscount() {
-        
-        return 0.0;
+    protected void configure() {
 
+        bind(Discountable.class).toProvider(DiscountProvider.class);
     }
     
 }

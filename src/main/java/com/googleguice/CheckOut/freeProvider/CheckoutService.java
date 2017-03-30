@@ -3,9 +3,8 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.googleguice.CheckOut.provider;
+package com.googleguice.CheckOut.freeProvider;
 
-import com.googleguice.CheckOut.freeProvider.*;
 import com.google.inject.Guice;
 import com.google.inject.Inject;
 import com.google.inject.Injector;
@@ -34,7 +33,7 @@ public class CheckoutService {
         final double discount = discountable.get().getDiscount();
         final double totalAfterDiscount = shoppingTotal - (shoppingTotal * discount);
 
-        System.out.println("Provider: Shopping Cart Initially " + shoppingTotal + " with a discount of "
+        System.out.println("Free Provider: Shopping Cart Initially " + shoppingTotal + " with a discount of "
                 + discount * 100 + " total is " + totalAfterDiscount
         );
 
