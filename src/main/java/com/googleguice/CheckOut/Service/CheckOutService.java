@@ -25,7 +25,7 @@ public class CheckOutService {
     public double checkout(double shoppingCartTotal){
         final double totalAfterDiscount = shoppingCartTotal - (shoppingCartTotal*discountable.getDiscount());
         
-        System.out.println("Shopping Cart Initially " + shoppingCartTotal + " with a discount of "
+        System.out.println("Single Interface: Shopping Cart Initially " + shoppingCartTotal + " with a discount of "
                             + discountable.getDiscount()*100 + " total is " + totalAfterDiscount      
         );
         
