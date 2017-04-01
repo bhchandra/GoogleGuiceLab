@@ -5,13 +5,9 @@
  */
 package com.googleguice.CheckOut.provider;
 
-import com.googleguice.CheckOut.freeProvider.*;
-import com.google.inject.Guice;
 import com.google.inject.Inject;
-import com.google.inject.Injector;
 import com.google.inject.Provider;
 import com.googleguice.CheckOut.Discount.Discountable;
-import com.googleguice.guice.inject.DiscountModule;
 
 /**
  *
